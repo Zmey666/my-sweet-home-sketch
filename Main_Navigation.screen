@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:Screen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://wireframesketcher.com/1.0/model.ecore" xmlns:o="http://wireframesketcher.com/1.0/model/overrides">
+  <widgets xsi:type="model:Master" id="1" x="200" y="10" measuredWidth="456" measuredHeight="872">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android5/Devices/Nexus%206.screen#Nexus%206"/>
+  </widgets>
+  <widgets xsi:type="model:Master" id="2" x="221" y="111" width="410" measuredWidth="410" measuredHeight="56">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android5/Navigation.screen#App%20Bar"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="6"/>
+      <widgetChanges xsi:type="o:Delete" ref="3"/>
+      <widgets ref="2" width="410"/>
+      <widgets ref="5" text="Мой дом"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="3" x="221" y="166" width="410" measuredWidth="410" measuredHeight="104">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android5/Content.screen#Card%20List"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Delete" ref="56"/>
+      <widgets ref="49" width="410"/>
+      <widgets ref="54" width="271" text="Совет: Bacon ipsum dolor sit amet porchetta turkey leberkas Corned beef prosciutto ground..."/>
+      <widgets ref="55" x="298"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="4" x="221" y="269" width="410" measuredWidth="410" measuredHeight="104">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android5/Content.screen#Card%20List"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Insert" newIndex="4">
+        <object xsi:type="model:SVGImage" id="6" x="299" y="10" width="92" height="84" src="assets/rainy-day.svg"/>
+      </widgetChanges>
+      <widgetChanges xsi:type="o:Delete" ref="55"/>
+      <widgets ref="49" width="410"/>
+      <widgets ref="54" x="35" y="17" height="60" text="20°С">
+        <font size="48px"/>
+      </widgets>
+      <widgets ref="56" x="13" y="73" width="271" text="Ветер: 10 м/с       Влажность: 80%"/>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="7" x="221" y="372" width="410" measuredWidth="410" measuredHeight="104">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android5/Content.screen#Card%20List"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Insert" newIndex="4">
+        <object xsi:type="model:Label" id="12" x="14" y="75" text="10 мин" foreground="#666666">
+          <font size="12px"/>
+        </object>
+      </widgetChanges>
+      <widgetChanges xsi:type="o:Insert" newIndex="4">
+        <object xsi:type="model:Label" id="10" x="15" y="44" text="Датчик окна спальни">
+          <font/>
+        </object>
+      </widgetChanges>
+      <widgetChanges xsi:type="o:Delete" ref="56"/>
+      <widgetChanges xsi:type="o:Delete" ref="55"/>
+      <widgets ref="49" width="410"/>
+      <widgets ref="54" width="271" height="24" text="Нарушение периметра!">
+        <font size="16px" bold="true"/>
+      </widgets>
+    </overrides>
+  </widgets>
+  <widgets xsi:type="model:Master" id="13" x="221" y="166" height="602" measuredWidth="305" measuredHeight="602">
+    <screen xsi:type="model:WidgetGroup" href="assets/Android5/Navigation.screen#Navigation%20Drawer"/>
+    <overrides>
+      <widgetChanges xsi:type="o:Insert" newIndex="10">
+        <object xsi:type="model:Placeholder" id="15" width="304" height="155"/>
+      </widgetChanges>
+      <widgetChanges xsi:type="o:Delete" ref="76"/>
+      <widgetChanges xsi:type="o:Delete" ref="66"/>
+      <widgetChanges xsi:type="o:Delete" ref="65"/>
+      <widgetChanges xsi:type="o:Delete" ref="64"/>
+      <widgetChanges xsi:type="o:Delete" ref="63"/>
+      <widgetChanges xsi:type="o:Delete" ref="62"/>
+      <widgets ref="60" height="602">
+        <attributes key="background" value="#f3f3f3"/>
+        <attributes key="alpha" value="255"/>
+      </widgets>
+      <widgets ref="61" y="154"/>
+      <widgets ref="68" y="162" height="207"/>
+      <widgets ref="69" height="207"/>
+      <widgets ref="70" height="207" text="Погода&#xA;Климат внутри&#xA;Стражи квартиры&#xA;Счетчики">
+        <items ref="@items.0" text="Погода"/>
+        <items ref="@items.1" text="Климат внутри"/>
+        <items ref="@items.2" text="Стражи квартиры"/>
+        <items ref="@items.3" text="Счетчики"/>
+      </widgets>
+      <widgets ref="71">
+        <attributes key="icon" value="assets/ic-cloud-queue (medium)"/>
+      </widgets>
+      <widgets ref="72">
+        <attributes key="icon" value="assets/ic-toys (medium)"/>
+      </widgets>
+      <widgets ref="73">
+        <attributes key="icon" value="eye (medium)"/>
+      </widgets>
+      <widgets ref="74">
+        <attributes key="icon" value="assets/ic-av-timer (medium)"/>
+      </widgets>
+      <widgets ref="75" y="371"/>
+    </overrides>
+  </widgets>
+  <hRuler/>
+  <vRuler/>
+  <font name="Roboto" size="14px"/>
+</model:Screen>
